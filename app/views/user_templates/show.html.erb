@@ -9,7 +9,11 @@
 
 <dt>Edit user</dt>
 
-<dd>form goes here</dd>
+<dd>
+<form action="/update_username/<%= @the_user.username %>">
+<label for="Username">Username</label><input name="new_username" id="Username" value="<%= @the_user.username %>"><button>Update user</button>
+</form>
+</dd>
 </dl>
 
 <h2>Own photos <%= @the_user.own_photos.count %></h2>
